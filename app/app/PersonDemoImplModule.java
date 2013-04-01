@@ -1,9 +1,11 @@
 package app;
-import models.IBoat;
+
 
 import com.google.inject.AbstractModule;
 
-import controllers.IBoatController;
+import de.htwg.seapal.boatdemo.controllers.IBoatController;
+import de.htwg.seapal.boatdemo.models.IBoat;
+
 import de.htwg.seapal.persondemo.controllers.IPersonController;
 import de.htwg.seapal.persondemo.models.IPerson;
 
@@ -16,8 +18,8 @@ public class PersonDemoImplModule extends AbstractModule {
 		bind(IPerson.class).to(de.htwg.seapal.persondemo.models.impl.Person.class);
 		bind(IPersonController.class).to(de.htwg.seapal.persondemo.controllers.impl.PersonController.class);
 		
-		bind(IBoatController.class).to(controllers.impl.BoatController.class);
-		bind(IBoat.class).to(models.impl.Boat.class);
+		bind(IBoatController.class).to(de.htwg.seapal.boatdemo.controllers.impl.BoatController.class);
+		bind(IBoat.class).to(de.htwg.seapal.boatdemo.models.impl.Boat.class);
 	}
 
 }

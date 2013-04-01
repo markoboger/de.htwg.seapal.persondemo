@@ -1,3 +1,4 @@
+package de.htwg.seapal.persondemo.app;
 import org.junit.*;
 
 import play.mvc.*;

@@ -7,18 +7,18 @@ import org.junit.Test;
 
 import de.htwg.seapal.persondemo.models.mock.Person;
 
-public class BoatTest {
+public class PersonTest {
 	
-	private Person boat;
+	private Person person;
 
 	@Before
 	public void setup(){
-		boat = new Person();	
+		person = new Person();	
 	}
 
 	@Test
 	public void testGetName() {
-		assertEquals("Titanic", boat.getName());
+		assertEquals("Mustermann", person.getName());
 	}
 
 }

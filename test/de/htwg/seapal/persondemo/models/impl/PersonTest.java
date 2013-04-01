@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import de.htwg.seapal.persondemo.models.impl.Person;
 
-public class BoatTest {
+public class PersonTest {
 
 	private Person boat;
 	
