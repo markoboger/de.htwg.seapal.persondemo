@@ -18,7 +18,7 @@ public class PersonController extends AbstractPersonController{
 	
 	@Override
 	public String getPersonById(int personId) {
-		return "Mustermann";
+		return person.getName();
 	}
 
 }
