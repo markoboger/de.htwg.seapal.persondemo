@@ -5,8 +5,8 @@ import java.util.Scanner;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
-import views.tui.PersonTUI;
-import controllers.IPersonController;
+import de.htwg.seapal.persondemo.controllers.IPersonController;
+import de.htwg.seapal.persondemo.views.tui.PersonTUI;
 
 
 public class PersonDemo {
