@@ -12,4 +12,9 @@ public class Person extends AbstractPerson{
 		
 	}
 	
+	public int createOwnedBoat(String name){
+		return 4711;
+		
+	}
+	
 }

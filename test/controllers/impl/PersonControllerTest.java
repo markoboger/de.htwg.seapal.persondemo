@@ -13,22 +13,22 @@ import com.google.inject.Injector;
 
 import controllers.IPersonController;
 
-public class BoatControllerTest {
+public class PersonControllerTest {
 
-	private IPersonController boatController;
+	private IPersonController personController;
 	// Set up Google Guice Dependency Injector
 	Injector injector = Guice.createInjector(new PersonDemoImplModule());
 
 	@Before
 	public void setup() {
 		// Build up the application, resolving dependencies automatically by Guice
-		boatController = injector.getInstance(IPersonController.class);
+		personController = injector.getInstance(IPersonController.class);
 	}
 
 	@Test
-	public void testGetBoatName() {
-		boatController.setPersonName("Xpresso");
-		assertEquals("Xpresso", boatController.getPersonName());
+	public void testGetPersonName() {
+		personController.setPersonName("Mustermann");
+		assertEquals("Mustermann", personController.getPersonName());
 	}
 
 }

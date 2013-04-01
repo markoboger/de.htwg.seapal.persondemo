@@ -14,4 +14,8 @@ public abstract class AbstractPerson implements IPerson{
 		this.name = name;
 	}
 	
+	public String getOwnedBoatNameByID(int id) {
+		return Integer.toString(id);
+	}
+	
 }

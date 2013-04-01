@@ -13,9 +13,9 @@ import com.google.inject.Injector;
 
 import controllers.IPersonController;
 
-public class BoatControllerTest {
+public class PersonControllerTest {
 
-	private IPersonController boatController;
+	private IPersonController personController;
 	// Set up Google Guice Dependency Injector
 	Injector injector = Guice.createInjector(new PersonDemoMockModule());
 
@@ -23,13 +23,13 @@ public class BoatControllerTest {
 	@Before
 	public void setup(){
 		// Build up the application, resolving dependencies automatically by Guice
-		boatController = injector.getInstance(IPersonController.class);
+		personController = injector.getInstance(IPersonController.class);
 	}
 
 	@Test
-	public void testGetBoatName() {
-		boatController.setPersonName("BullshitName-ShouldNotShowUp");
-		assertEquals("Titanic", boatController.getPersonName());
+	public void testGetPersonName() {
+		personController.setPersonName("BullshitName-ShouldNotShowUp");
+		assertEquals("Mustermann", personController.getPersonName());
 	}
 
 }
