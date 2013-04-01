@@ -22,5 +22,10 @@ public abstract class AbstractPersonController extends Observable implements IPe
 	public String getPersonName() {
 		return person.getName();
 	}
+	
+	@Override
+	public String getPersonById(int personId) {
+		return person.getName();
+	}
 
 }

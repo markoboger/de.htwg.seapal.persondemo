@@ -7,6 +7,8 @@ public interface IPersonController extends IObservable{
 	void setPersonName(String string);
 	
 	String getPersonName();
+	
+	String getPersonById(int personId);
 
 	String getString();
 
