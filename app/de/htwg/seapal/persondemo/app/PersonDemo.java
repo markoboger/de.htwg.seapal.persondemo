@@ -1,4 +1,4 @@
-package app;
+package de.htwg.seapal.persondemo.app;
 
 import java.util.Scanner;
 

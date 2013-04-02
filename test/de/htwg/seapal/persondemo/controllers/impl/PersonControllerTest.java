@@ -6,11 +6,11 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import app.PersonDemoImplModule;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
+import de.htwg.seapal.persondemo.app.PersonDemoImplModule;
 import de.htwg.seapal.persondemo.controllers.IPersonController;
 
 public class PersonControllerTest {
