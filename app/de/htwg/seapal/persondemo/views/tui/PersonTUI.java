@@ -2,15 +2,19 @@ package de.htwg.seapal.persondemo.views.tui;
 
 import java.util.Scanner;
 
+import com.google.inject.Inject;
+
 import de.htwg.seapal.persondemo.controllers.IPersonController;
 import de.htwg.util.observer.Event;
 import de.htwg.util.observer.IObserver;
+import de.htwg.util.plugin.Plugin;
 
 
-public class PersonTUI implements IObserver{
+public class PersonTUI implements Plugin, IObserver{
 	
 	private IPersonController controller;
 
+	@Inject
 	public PersonTUI(IPersonController controller) {
 		this.controller = controller;
 		controller.addObserver(this);
@@ -26,6 +30,7 @@ public class PersonTUI implements IObserver{
 			continu = false;
 		}
 		if (line.equalsIgnoreCase("n")) {
+			System.out.println("New Person Name:");
 			Scanner scanner = new Scanner(System.in);
 			controller.setPersonName(scanner.next());
 		}
@@ -36,6 +41,16 @@ public class PersonTUI implements IObserver{
 		System.out.println("PersonDemo: n - new Name");
 		System.out.println(controller.getString());
 		
+	}
+
+	@Override
+	public String getMenuEntry() {
+		return "Person";
+	}
+
+	@Override
+	public char getMenuKey() {
+		return 'p';
 	}
 
 }
