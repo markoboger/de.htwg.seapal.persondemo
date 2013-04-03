@@ -10,9 +10,9 @@ object ApplicationBuild extends Build {
   val appDependencies = Seq(
     // Add your project dependencies here,
     "com.google.inject" % "guice" % "3.0",
-    "util" % "util_2.10" % "1.0-SNAPSHOT",
-    "boatdemo" % "boatdemo_2.10" % "1.3-SNAPSHOT",
-    "menudemo" % "menudemo_2.10" % "1.0-SNAPSHOT"
+    "de.htwg" % "util" % "1.0-SNAPSHOT",
+    "de.htwg.seapal" % "boatdemo" % "1.3-SNAPSHOT",
+    "de.htwg.seapal" % "menudemo" % "1.0-SNAPSHOT"
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
