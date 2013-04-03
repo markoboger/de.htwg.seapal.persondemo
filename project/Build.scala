@@ -22,7 +22,7 @@ object ApplicationBuild extends Build {
   
     resolvers += "HTWG Resolver" at "http://lenny2.in.htwg-konstanz.de:8081/artifactory/libs-snapshot-local",
 
-    publishTo := Some("HTWG PublishTo" at "http://lenny2.in.htwg-konstanz.de:8081/artifactory/libs-snapshot-local;build.timestamp=" + new java.util.Date().getTime) 
+    publishTo := Some("HTWG PublishTo" at "http://lenny2.in.htwg-konstanz.de:8081/artifactory/libs-snapshot-local;build.timestamp=" + new java.util.Date().getTime), 
   
       	// setup entry points for sonar code analyzer
   	pomExtra :=
